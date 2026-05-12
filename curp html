@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constancia de CURP - Sebastian Mancilla</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .document-container {
+            width: 800px;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Borde decorativo similar al de la imagen */
+        .border-frame {
+            border: 15px solid #7d967d; /* Color verde olivo */
+            padding: 20px;
+            border-image: repeating-linear-gradient(45deg, #7d967d, #7d967d 10px, #ffffff 10px, #ffffff 20px) 20;
+        }
+
+        .header {
+            text-align: center;
+            color: #235b4e;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header h2 {
+            font-size: 16px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        .main-data {
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            gap: 20px;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .curp-box {
+            grid-column: 2;
+        }
+
+        .label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .value {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .qr-placeholder {
+            width: 120px;
+            height: 120px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .letter-content {
+            margin-top: 50px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+
+        .signature-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .barcode {
+            margin-top: 20px;
+            height: 40px;
+            background: repeating-linear-gradient(90deg, #000, #000 2px, #fff 2px, #fff 4px);
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="document-container">
+    <div class="border-frame">
+        <div class="header">
+            <h1>ESTADOS UNIDOS MEXICANOS</h1>
+            <h2>CONSTANCIA DE LA CLAVE ÚNICA DE REGISTRO DE POBLACIÓN</h2>
+        </div>
+
+        <div class="main-data">
+            <div style="text-align: center;">
+                <div style="font-size: 40px;">🇲🇽</div>
+                <p style="color: #999; font-style: italic;">Soy México</p>
+            </div>
+
+            <div class="curp-box">
+                <div class="label">Clave:</div>
+                <div class="value">MALS071107HMCNPBA2</div>
+                
+                <div class="label">Nombre:</div>
+                <div class="value">SEBASTIAN MANCILLA LOPEZ</div>
+
+                <div class="label">Entidad de registro:</div>
+                <div class="value" style="font-size: 18px;">MEXICO</div>
+            </div>
+
+            <div class="qr-placeholder">
+                [Imagen QR de curpmancilla.PNG]
+            </div>
+        </div>
+
+        <div class="barcode"></div>
+        <p style="font-size: 10px; margin-top: 5px;">115106200700522</p>
+    </div>
+
+    <!-- Sección de la carta inferior -->
+    <div class="letter-content">
+        <p style="text-align: right;">Ciudad de México, a 12 de mayo de 2026</p>
+        <p><strong>SEBASTIAN MANCILLA LOPEZ</strong><br>PRESENTE</p>
+        
+        <p>El derecho a la identidad está consagrado en nuestra Constitución. En la Secretaría de Gobernación trabajamos todos los días para garantizar que las y los mexicanos gocen de este derecho plenamente...</p>
+        
+        <p>Nuestro compromiso es que la identidad de cada persona esté protegida y segura, por ello contamos con los máximos estándares para la protección de los datos personales.</p>
+
+        <div class="signature-section">
+            <p><strong>ROSA ICELA RODRÍGUEZ VELÁZQUEZ</strong></p>
+            <p>SECRETARIA DE GOBERNACIÓN</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
